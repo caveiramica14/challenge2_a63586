@@ -375,6 +375,7 @@ GameObject:
   - component: {fileID: 4566873824022584756}
   - component: {fileID: 3508508464927271482}
   - component: {fileID: 2230761536374810459}
+  - component: {fileID: 7878846457993498774}
   m_Layer: 0
   m_Name: Animal_Stag_01
   m_TagString: Untagged
@@ -442,6 +443,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 10
+--- !u!114 &7878846457993498774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3791259880413991538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c22876ca0018e4097b2ffdc327bab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!1 &3870815681457284256
 GameObject:
   m_ObjectHideFlags: 0
