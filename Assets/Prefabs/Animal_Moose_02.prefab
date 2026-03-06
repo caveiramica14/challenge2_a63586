@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 5866981838131962029}
   - component: {fileID: 4536900371476122444}
   - component: {fileID: 457470341649103813}
-  - component: {fileID: 2560896832747506992}
+  - component: {fileID: 5546571948622462868}
   m_Layer: 0
   m_Name: Animal_Moose_02
   m_TagString: Animal
@@ -226,6 +226,7 @@ Transform:
   - {fileID: 3194927844687772703}
   - {fileID: 2816381469136943977}
   - {fileID: 6641219079602055853}
+  - {fileID: 8450014096265130963}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &2501920449218247468
@@ -296,7 +297,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.18021215, y: 0.46754164, z: 0.4266801}
   m_Center: {x: -0.0009065758, y: 0.2283738, z: 0.065689065}
---- !u!114 &2560896832747506992
+--- !u!114 &5546571948622462868
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -305,10 +306,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2819794293746164110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d058e0d713e085488316461f7e3c6b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 4af652d3375f4e64ba3175c88da22e19, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnimalHit
-  deathEffect: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalHunger
+  hungerSlider: {fileID: 8448542258353385305}
+  amountToBeFed: 3
 --- !u!1 &2827314836454091104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,3 +1039,120 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000000014901161, y: 0.0357289, z: 0.11530784}
     m_Extent: {x: 0.062572636, y: 0.22771719, z: 0.19990173}
   m_DirtyAABB: 0
+--- !u!1001 &3274808795210810188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1844500765892075498}
+    m_Modifications:
+    - target: {fileID: 575277847970912958, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_Name
+      value: SliderCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824043636667895090, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+--- !u!114 &8448542258353385305 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6362800484827933717, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+  m_PrefabInstance: {fileID: 3274808795210810188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
+--- !u!224 &8450014096265130963 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6356283537547636895, guid: b39d9666be88a19428ba93bf84ab973b, type: 3}
+  m_PrefabInstance: {fileID: 3274808795210810188}
+  m_PrefabAsset: {fileID: 0}
