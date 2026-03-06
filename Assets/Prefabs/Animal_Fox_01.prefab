@@ -468,10 +468,10 @@ GameObject:
   - component: {fileID: 6519858854065998346}
   - component: {fileID: 7484185837583795549}
   - component: {fileID: 7413503419316434187}
-  - component: {fileID: 6498992613547073699}
+  - component: {fileID: 1989555651521366652}
   m_Layer: 0
   m_Name: Animal_Fox_01
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -571,7 +571,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.06544163, y: 0.20843099, z: 0.31975517}
   m_Center: {x: -0.0005413056, y: 0.10023018, z: 0.010797882}
---- !u!114 &6498992613547073699
+--- !u!114 &1989555651521366652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -580,9 +580,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2021027577043721520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d308779bc44152469911ffda9fad6ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d058e0d713e085488316461f7e3c6b8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalHit
+  deathEffect: {fileID: 0}
 --- !u!1 &3607254684834949980
 GameObject:
   m_ObjectHideFlags: 0
